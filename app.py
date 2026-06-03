@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Tiêu đề
-st.title("Ứng dụng tính tiền gửi tiết kiệm")
+st.title("Ứng dụng tính tiền gửi tiết kiệm theo lãi đơn")
 
 # Nhập dữ liệu
 C = st.number_input(
@@ -30,5 +30,5 @@ if st.button("Tính toán"):
     An = C * (1 + lai_suat * n / 12)
 
     st.success(
-        f"Tổng số tiền nhận được: {An:,.2f} triệu đồng"
+        f"Tổng số tiền khách hàng nhận được theo lãi đơn: {An:,.2f} triệu đồng"
     )
